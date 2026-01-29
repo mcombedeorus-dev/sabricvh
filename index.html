@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabritas Shop Moderno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                <span>Sabricvh</span>
+            </div>
+            <div class="cart-info">
+                <span class="cart-label">🛒 Carrito</span>
+                <div class="cart-counter-box">
+                    <span id="cart-count">0</span> productos
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        
+        <main class="products-section">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div id="product-grid" class="grid">
+                </div>
+        </main>
+
+        <aside class="cart-section">
+            <div class="cart-card">
+                <div class="cart-header">
+                    <h2>Tu Carrito</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                </div>
+                
+                <h3>Tu Pedido</h3>
+                
+                <div id="cart-items-list">
+                    <div class="cart-placeholder-item">Tu carrito está vacío</div>
+                    <div class="cart-placeholder-item">Tu carrito está vacío</div>
+                </div>
+                
+                <hr class="divider">
+                
+                <div class="cart-summary">
+                    <div class="summary-row total-row">
+                        <span>Total:</span>
+                        <span>$<span id="total-display">0</span></span>
+                    </div>
+                     <div class="summary-row subtotal-row">
+                        <span>Subtotal:</span>
+                        <span>$<span id="total-price-small">0.0</span></span>
+                    </div>
+                </div>
+                
+                <button class="btn-checkout" onclick="checkout()">Finalizar Compra</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
